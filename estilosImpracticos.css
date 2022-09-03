@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* FONTS */
+@font-face {
+    font-family: Pixel;
+    src: url(./fonts/PixeloidMono-1G8ae.ttf);
+}
+@font-face {
+    font-family: PixelBold;
+    src: url(./fonts/PixeloidSansBold-RpeJo.ttf);
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+body{
+    display:flexbox;
+    background-image: url(./images/background.gif);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    z-index: -1;
+}
+
+.loadingBar{
+    margin: auto;
+    text-align: center;
+    z-index: 2;
+    width: 60%;
+}
+
+
+
+
