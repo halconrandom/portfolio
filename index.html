@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="dist/rpgui.css" rel="stylesheet" type="text/css" >
     <link rel="stylesheet" href="estilosImpracticos.css" />
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Bienvenido a mi perfil</title>
   </head>
   <body>
-    <audio id="myaudio" preload="auto" loop>
-      <source src="./images/On Melancholy Hill (2022) [8 Bit Tribute to Gorillaz] - 8 Bit Universe (128 kbps).mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    <script type="text/javascript">
-      window.onload=function(){
-        document.getElementById("myaudio").play();
-      }
-    </script>
-    
-    <header>
-      
-    </header>
+    <header headerIndex>
+
+      <a onclick="return makeSound('./pages/welcome.html')" href="#" class="rpgui-button beginButton" id="playAudio">Lets Begin!</a>
+    </header>    
+
   </body>
-  <script src="dist/rpgui.js"></script>  
+  <script src="dist/rpgui.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+  function makeSound(url) {
+    event.preventDefault();
+    
+      var audio = new Audio('./audio/selectsound.mp3');
+      audio.play();
+    
+    setTimeout(function() {
+       window.location.href = url;
+  }, 500);
+  }</script>
 </html>
