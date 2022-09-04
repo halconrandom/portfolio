@@ -4,26 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="dist/rpgui.css" rel="stylesheet" type="text/css" >
-    <link rel="stylesheet" href="estilosImpracticos.css" />
-
+    <link href="../dist/rpgui.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="../estilosImpracticos.css" />
     <title>Welcome to my Profile</title>
   </head>
-  <body>
-    <header headerIndex>
-        <audio id="myaudio" autoplay loop>
-            <source src="./images/On Melancholy Hill (2022) [8 Bit Tribute to Gorillaz] - 8 Bit Universe (128 kbps).mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-      </button>
-    </header>
+  <body class="bodyWelcome">
+    <audio id="myaudio" autoplay loop>
+      <source src="../audio/backgroundsound.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+
+    <section class="sectionWelcome">
+      <audio id="clickSound" src="../audio/selectsound.mp3" preload="auto"></audio>
+      <div id="squareTextWelcome" onclick="change_text()" class="rpgui-container framed textBoxWelcome">
+        <p id="textBox">¡Oye! Espera un segundo.</p>
+        <p id="textBoxWelcome2">Dame un segundo y encuentro una foto mia.</p>
+        <p id="textBoxWelcome3">...</p>
+        <p id="textBoxWelcome4">...</p>
+      </div>
+
+
+      <div id="squareTextWelcome2" onclick="change_text()" class="rpgui-container framed textBox2">
+        <p id="textBoxWelcome5">¡Aqui esta!</p>
+        <audio id="meowEffect" src="../audio/meoweffect.mp3" preload="auto"></audio>
+        <p id="textBoxWelcome6">¡Yo seré tu guia en esta pagina!</p>
+        <p id="textBoxWelcome7">¿Adonde te gustaria primero?</p>
+        <br>
+      </div>
+      <div id="buttonSeleccion" class="rpgui-container framed buttonseleccion">
+        <a class="rpgui-button buttonProfile" id="buttonP" href="">Perfil General</a>
+        <a class="rpgui-button buttonContact" id="buttonP" href="">Contacto</a>
+        <a class="rpgui-button buttonGithub" id="buttonP" href="">Github</a>
+        <a class="rpgui-button buttonPersonal" id="buttonP" href="">Información Personal</a>
+      </div>
+
+
+      
+      <div id="frameCat" class="rpgui-container framed catChar">
+        <img src="../images/sasha8bit.jpg" alt="catSasha">
+      </div>
+    </section>
 
 
 
-    </script>
-    
+
+
+
+
+
+
 
   </body>
-  <script src="dist/rpgui.js"></script>  
-  <!-- <script src="./main.js"></script> -->
+  <script src="../dist/rpgui.js"></script>
+
+  <script src="../main.js"></script>
 </html>
