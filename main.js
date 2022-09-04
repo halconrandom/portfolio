@@ -1,5 +1,6 @@
 var contador = 0;
 var textBox = document.getElementById('textBox');
+var mql = window.matchMedia("screen and (max-width: 1280px)")
 
 function change_text(){
     if (contador <= 9) {
@@ -32,6 +33,8 @@ function change_text(){
             document.getElementById('squareTextWelcome2');
             squareTextWelcome2.style.display = "flex";
             textBoxWelcome5.style.display = "flex"
+            document.getElementById('textBoxWelcome5');
+
         }  else if (contador === 6) {
             document.getElementById('textBoxWelcome6');
             textBoxWelcome5.style.display ="none"
