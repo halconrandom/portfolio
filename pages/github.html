@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/rpgui.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="../estilosImpracticos.css" />
+    <title>My Personal Github</title>
+  </head>
+  <body class="bodyGithub">
+    <audio id="myaudio" autoplay loop>
+      <source src="../audio/backgroundsound.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <nav class="NavBarGeneral">
+        <input class="menuButtonInput" type="checkbox" id="menuButton" name="menuButton">
+        <label class="rpgui-container framed menuButton" for="menuButton">MENÚ</label>
+        <div class="rpgui-container framed menuContainer">
+          <p>PAUSA</p>
+          <br>
+          <div id="navOptions" class="navLinks">
+            <a onclick="return makeSound('/index.html')" href="#" class="rpgui-button beginButton" id="playAudio">Reiniciar Nivel</a>
+            <a onclick="return makeSound('../pages/perfilGeneral.html')" href="#" class="rpgui-button beginButton" id="playAudio">Perfil General</a>
+            <a onclick="return makeSound('../pages/informacionPersonal.html')" href="#" class="rpgui-button beginButton" id="playAudio">Info Personal</a>
+            <a onclick="return makeSound('../pages/github.html')" href="#" class="rpgui-button beginButton githubPageDisable" id="playAudio">Github</a>
+            <a onclick="return makeSound('../pages/contacto.html')" href="#" class="rpgui-button beginButton" id="playAudio">Contacto</a>
+          </div>
+          </div>
+        </div>
+        
+    </nav>
+
+    <section class="sectionGithub">
+      
+      <div id="frameCat" class="rpgui-container framed catChar catCharMini">
+        <img src="../images/sasha8bit.jpg" alt="catSasha">
+      </div>
+
+
+      <div id="squareTextGithub" onclick="change_text2()" class="rpgui-container framed textBox3">
+        <audio id="clickSound" src="../audio/selectsound.mp3" preload="auto"></audio>
+        <p id="textBoxGithub0">Click aquí</p>
+        <p id="textBoxGithub1">Aquí está el Github de Isaac. No es muy creativo con sus proyectos,</p>
+        <p id="textBoxGithub2">pero se esmera muchisimo para lograr hacer cosas que busquen automatizar otras...</p>
+        <p id="textBoxGithub3">...</p>
+        <p id="textBoxGithub4">O algo así, la verdad es que duermo siempre que programa.</p>
+        <p id="textBoxGithub5">Para acceder al github, presiona ese boton gigantesco que acaba de aparecer.</p>
+        <p id="textBoxGithub6">Ay... Espera, ese no era... Un momento. Ese era para molestar a otros.</p>
+        <p id="textBoxGithub7">Ahora si, estoy 100% seguro que este si es... creo.</p>
+        <p id="textBoxGithub8">Ah si ves... Si ya viste todo por acá, presiona en el boton menu para ver otras opciones.</p>
+      </div>
+
+      <div>
+        <a onclick="change_text2()" id="githubtrolButton" class="rpgui-button  githubtrolButton" target="_blank" href="https://www.youtube.com/watch?v=mCdA4bJAGGk">Github</a>
+      </div>
+      <div>
+        <a onclick="change_text2()" id="githubButton" class="rpgui-button githubButton" target="_blank" href="https://github.com/halconrandom">Github <br>(Este si es de verdad)</a>
+      </div>
+
+
+
+
+
+
+
+    </section>
+
+
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="../dist/rpgui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+  function makeSound(url) {
+    event.preventDefault();
+    
+      var audio = new Audio('../audio/beginsound.mp3');
+      audio.play();
+    
+    setTimeout(function() {
+       window.location.href = url;
+  }, 500);
+  }</script>
+
+  <script src="../main.js"></script>
+</html>

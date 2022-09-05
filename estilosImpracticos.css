@@ -25,7 +25,7 @@ html{
 
 body{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: url(./images/background.gif);
     background-size:cover;
     background-repeat:no-repeat;
@@ -191,3 +191,292 @@ body{
       top: 650px;
     }
   }
+
+
+  /*  */
+  /*  */
+  /*  */
+  /* GITHUB PAGE */
+  /*  */
+  /*  */
+  /*  */
+
+.bodyGithub{
+    display: flex;
+}
+.githubPageDisable{
+    pointer-events: none;
+    cursor: default;
+}
+
+.NavBarGeneral{
+    display: flex;
+    justify-content: center;
+}
+
+.menuButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 80px;
+}
+
+.menuButtonInput{
+    display: none;
+}
+
+.menuContainer{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 400px;
+    flex-direction: column;
+    position: absolute;
+    left: -400px;
+    top: 280px; 
+}
+
+.menuButtonInput:checked ~ .menuContainer{
+    display: flex;
+    animation: menunav 0.3s ease-in forwards;
+}
+
+@keyframes menunav{
+    100%{
+    left: 800px;
+    top: 280px;
+    }
+}
+
+.menuContainer p{
+    text-align: center;
+    font-family: Pixel;
+    color: white;
+    text-shadow: rgb(0, 0, 0) -2px 0px, rgb(0, 0, 0) 0px 2px, rgb(0, 0, 0) 2px 0px, rgb(0, 0, 0) 0px -2px;
+}
+
+
+
+.NavBarGeneral label{
+    font-family: Pixel;
+    color: white;
+    text-shadow: rgb(0, 0, 0) -2px 0px, rgb(0, 0, 0) 0px 2px, rgb(0, 0, 0) 2px 0px, rgb(0, 0, 0) 0px -2px;
+}
+
+
+
+
+
+.catCharMini{
+    position: fixed;
+    left: 150px;
+    opacity: 1;
+    height: 253px;
+    width: 243px;
+}
+.catCharMini img{
+    height: 200px;
+    width: 190px;
+}
+
+.textBox3{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 400px;
+    width: 400px;
+    height: 150px;
+}
+
+.textBox3 p{
+    font-family: Pixel;
+    color: white;
+    text-shadow: rgb(0, 0, 0) -2px 0px, rgb(0, 0, 0) 0px 2px, rgb(0, 0, 0) 2px 0px, rgb(0, 0, 0) 0px -2px;
+}
+
+#textBoxGithub1{
+    display: none;
+}
+#textBoxGithub2{
+    display: none;
+}
+#textBoxGithub3{
+    display: none;
+}
+#textBoxGithub4{
+    display: none;
+}
+#textBoxGithub5{
+    display: none;
+}
+#textBoxGithub6{
+    display: none;
+}
+#textBoxGithub7{
+    display: none;
+}
+#textBoxGithub8{
+    display: none;
+}
+
+.githubtrolButton{
+    display: none;
+    justify-content: center;
+    position: absolute;
+    left: 730px;
+    top: 370px;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Pixel;
+    color: white;
+    text-shadow: rgb(0, 0, 0) -2px 0px, rgb(0, 0, 0) 0px 2px, rgb(0, 0, 0) 2px 0px, rgb(0, 0, 0) 0px -2px;
+}
+.githubButton{
+    display: none;
+    justify-content: center;
+    position: absolute;
+    left: 730px;
+    top: 370px;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Pixel;
+    color: white;
+    text-shadow: rgb(0, 0, 0) -2px 0px, rgb(0, 0, 0) 0px 2px, rgb(0, 0, 0) 2px 0px, rgb(0, 0, 0) 0px -2px;
+}
+
+
+
+
+@media (max-width: 428px) {
+    .catCharMini{
+        left: 90px;
+    }
+    .textBox3{
+        left: 15px;
+        top: 360px;
+    }
+    .githubtrolButton{
+        left: 20px;
+        top: 530px;
+        width: 300px;
+        height: 100px;
+    }
+    .githubButton{
+        left: 20px;
+        top: 530px;
+        width: 300px;
+        height: 100px;
+    }
+    .menuContainer{
+        top: 180px;
+        z-index: 11;
+    }
+    @keyframes menunav{
+        100%{
+        left: 50px;
+        top: 180px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px){
+    .catCharMini{
+        left: 265px;
+    }
+    .textBox3{
+        left: 185px;
+        top: 360px;
+    }
+    .githubtrolButton{
+        left: 201px;
+        top: 530px;
+        width: 300px;
+        height: 100px;
+    }
+    .githubButton{
+        left: 201px;
+        top: 530px;
+        width: 300px;
+        height: 100px;
+    }
+    .menuContainer{
+        top: 290px;
+        z-index: 11;
+    }
+    @keyframes menunav{
+        100%{
+        left: 230px;
+        top: 290px;}
+    }
+}
+@media (width: 1280px){
+    .catCharMini{
+        top: 0px;
+    }
+    .githubtrolButton{
+        left: 401px;
+        top: 380px;
+    }
+    .githubButton{
+        left: 401px;
+        top: 380px;
+    }
+    .menuContainer{
+        top: 290px;
+        z-index: 11;
+    }
+    @keyframes menunav{
+        100%{
+        left: 490px;
+        top: 290px;}
+    }
+}
+
+@media (width: 411px){
+    .catCharMini{
+        left: 90px;
+    }
+    .textBox3{
+        left: 5px;
+        top: 360px;
+    }
+    .githubtrolButton{
+        left: 20px;
+        top: 530px;
+        width: 300px;
+        height: 100px;
+    }
+    .githubButton{
+        left: 20px;
+        top: 530px;
+        width: 300px;
+        height: 100px;
+    }
+    .menuContainer{
+        top: 180px;
+        z-index: 11;
+    }
+    @keyframes menunav{
+        100%{
+        left: 50px;
+        top: 180px;
+        }
+    }
+}
+
+
+
+
+
