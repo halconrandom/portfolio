@@ -23,3 +23,6 @@ Estimación de la siguiente versión:
 1)Intentar añadir un boton para pausar o reanudar la musica en cada pagina.
 
 2)Añadir animación para la pagina del curriculum.
+
+
+NOTA: RESPONSIVE PROBABLEMENTE NO FUNCIONE EN TODAS LAS PAGINAS. ESTO SE BUSCA ARREGLAR EN PROXIMAS ACTUALIZACIONES.
