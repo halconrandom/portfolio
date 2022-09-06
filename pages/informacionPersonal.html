@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/rpgui.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="../estilos.css" />
+    <meta name="description" content="Portfolio Personal de Isaac Gonzalez - Información Personal">
+    <meta name="keywords" content="Español, JS, HTML, IsaacGonzalez, Developer, Software, Programador, Junior, Porfolio, Experiencia, Informacion, Curriculum,">
+    <title>My Personal Information</title>
+  </head>
+  <body class="bodyGithub">
+    <audio id="myaudio" autoplay loop muted>
+      <source src="../audio/backgroundsound.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <nav class="NavBarGeneral">
+        <input class="menuButtonInput" type="checkbox" id="menuButton" name="menuButton">
+        <label class="rpgui-container framed menuButton" for="menuButton">MENÚ</label>
+        <div class="rpgui-container framed menuContainer">
+          <p>PAUSA</p>
+          <br>
+          <div id="navOptions" class="navLinks">
+            <a onclick="return makeSound('../index.html')" href="#" class="rpgui-button beginButton" id="playAudio">Reiniciar Nivel</a>
+            <a onclick="return makeSound('../pages/informacionPersonal.html')" href="#" class="rpgui-button beginButton githubPageDisable" id="playAudio">Perfil General</a>
+            <a onclick="return makeSound('../pages/github.html')" href="#" class="rpgui-button beginButton" id="playAudio">Github</a>
+            <a  onclick="return makeSound('../pages/contacto.html')" href="#" class="rpgui-button beginButton" id="playAudio">Contacto</a>
+          </div>
+          </div>
+        </div>
+        
+    </nav>
+
+    <section class="sectionGithub">
+      
+      <div id="frameCat" class="rpgui-container framed catChar catCharMini">
+        <img src="../images/sasha8bit.jpg" alt="catSasha">
+      </div>
+
+
+      <div id="squareTextGithub" onclick="change_text4()" class="rpgui-container framed textBox3">
+        <audio id="clickSound" src="../audio/selectsound.mp3" preload="auto"></audio>
+        <p id="textBoxGithub0">Click aquí</p>
+        <p id="textBoxGithub1">Hola, veo que andas curioso sobre Isaac.</p>
+        <p id="textBoxGithub2">Cuando el me adoptó, tambien sentí muchisima curiosidad, pero creo que me puse nervioso...</p>
+        <p id="textBoxGithub3">Porque me oriné en su cama sin querer...</p>
+        <p id="textBoxGithub4">Pero eso es historia para otra ocasión, seguramente luego le pida que me haga una pagina así como esta</p>
+        <p id="textBoxGithub5">Donde pueda hablarles sobre mi.</p>
+        <p id="textBoxGithub6">Aquí podran encontrar información sobre quien es Isaac Gonzalez. Disfruten la lectura.</p>
+        <p id="textBoxGithub7">Si ya viste todo por acá, presiona en el boton menu para ver otras opciones.</p>
+      </div>
+
+      <div id="fotoPersonal" class="rpgui-container framed fotoPersonal">
+        <img src="../images/fotopropia.jpg" alt="fotoIsaac">
+      </div>
+      <div id="infoPersonalDiv" class="rpgui-container framed rpgui-content infoPersonalDiv">
+        <h1>Isaac Gonzalez Rodriguez</h1>
+        <h3>Frontend Developer</h3>
+        <br>
+        <hr class="golden">
+        <h4>Sobre mi</h4>
+        <p>Escribir es una de mis pasiones personales. Ser capaz de ayudar a los demás es la segunda. Sé inglés y español. Tuve que vivir una vida larga en una corta, pero eso es lo que me hizo una mejor persona y enseñó a cómo valorar todos los detalles pequeños.</p>
+        <br>
+        <hr class="golden">
+        <h4>Educación</h4>
+        <p>Liceo Tulio Febres Cordero - Bachiller en Ciencias (2016)</p>
+        <p>SENA Norte de Santander - Training en Manejo de Photoshop (2019) </p>
+        <p>CoderHouse - Frontend Development (En Curso)</p>
+        <br>
+        <hr class="golden">
+        <h4>Experiencia Laboral</h4>
+        <p>Call Center Agent - Teleperformance (Sept. 2020 - Sept. 2022)</p>
+        <p>Beta Tester - GEVAUDAN by Inkietud (May 2022 - Actualidad)</p>
+      </div>
+    </section>
+  </body>
+
+
+  <script src="../dist/rpgui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+  function makeSound(url) {
+    event.preventDefault();
+    
+      var audio = new Audio('../audio/beginsound.mp3');
+      audio.play();
+    
+    setTimeout(function() {
+       window.location.href = url;
+  }, 500);
+  }</script>
+
+  <script src="../main.js"></script>
+</html>

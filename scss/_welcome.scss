@@ -1,0 +1,68 @@
+.sectionWelcome {
+    @include centradoFlex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .textBoxWelcome {
+    @include centradoFlex;
+    width: 400px;
+    height: 100px;
+  
+    p {
+      @include textoGeneral;
+    }
+  }
+  
+  #squareTextWelcome {
+    display: flex;
+  }
+  
+  #textBoxWelcome2 {
+    @include JSConverter;
+  }
+  
+  #textBoxWelcome3 {
+    @include JSConverter;
+  }
+  
+  #textBoxWelcome4, #textBoxWelcome5, #textBoxWelcome6 {
+    @include JSConverter;
+  }
+  
+  #textBoxWelcome7 {
+    @include JSConverter;
+  }
+  
+  .buttonseleccion {
+    display: none;
+    padding: 40px;
+    flex-direction: column;
+  
+    a {
+      @include textoGeneral;
+      @include centradoFlex;
+      text-decoration: none;
+    }
+  }
+  
+  #squareTextWelcome2 {
+    display: none;
+    @include textoGeneral;
+  }
+  
+  .catChar {
+    opacity: 0;
+    position: absolute;
+    left: 400px;
+    width: 300px;
+    height: 400px;
+    z-index: -1;
+  
+    img {
+      width: 246px;
+      height: 346px;
+    }
+  }
+  

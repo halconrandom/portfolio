@@ -1,0 +1,414 @@
+/* FONTS */
+@font-face {
+  font-family: Pixel;
+  src: url(./fonts/PixeloidMono-1G8ae.ttf); }
+
+@font-face {
+  font-family: PixelBold;
+  src: url(./fonts/PixeloidSansBold-RpeJo.ttf); }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  image-rendering: pixelated; }
+
+html {
+  cursor: url("./dist/img/cursor/default-blue.png"), default; }
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/background.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.headerIndex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center; }
+
+.beginButton {
+  cursor: url("./dist/img/cursor/point.png"), pointer;
+  text-decoration: none;
+  font-family: Pixel;
+  text-align: center;
+  color: white;
+  text-shadow: black -2px 0px, black 0px 2px, black 2px 0px, black 0px -2px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+.sectionWelcome {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh; }
+
+.textBoxWelcome {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 100px; }
+  .textBoxWelcome p {
+    font-family: Pixel;
+    text-align: center;
+    color: white;
+    text-shadow: black -2px 0px, black 0px 2px, black 2px 0px, black 0px -2px; }
+
+#squareTextWelcome {
+  display: flex; }
+
+#textBoxWelcome2 {
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+#textBoxWelcome3 {
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+#textBoxWelcome4, #textBoxWelcome5, #textBoxWelcome6 {
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+#textBoxWelcome7 {
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+.buttonseleccion {
+  display: none;
+  padding: 40px;
+  flex-direction: column; }
+  .buttonseleccion a {
+    font-family: Pixel;
+    text-align: center;
+    color: white;
+    text-shadow: black -2px 0px, black 0px 2px, black 2px 0px, black 0px -2px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; }
+
+#squareTextWelcome2 {
+  display: none;
+  font-family: Pixel;
+  text-align: center;
+  color: white;
+  text-shadow: black -2px 0px, black 0px 2px, black 2px 0px, black 0px -2px; }
+
+.catChar {
+  opacity: 0;
+  position: absolute;
+  left: 400px;
+  width: 300px;
+  height: 400px;
+  z-index: -1; }
+  .catChar img {
+    width: 246px;
+    height: 346px; }
+
+.bodyGithub {
+  display: flex; }
+
+.githubPageDisable {
+  pointer-events: none;
+  cursor: default; }
+
+.NavBarGeneral {
+  display: flex;
+  justify-content: center;
+  z-index: 15; }
+
+.menuButton {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 80px; }
+
+.menuButtonInput {
+  display: none; }
+
+.menuContainer {
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  width: 320px;
+  height: 370px;
+  left: -400px;
+  top: 280px; }
+
+.menuButtonInput:checked ~ .menuContainer {
+  display: flex;
+  animation: menunav 0.3s ease-in forwards; }
+
+@keyframes menunav {
+  100% {
+    left: 800px;
+    top: 280px; } }
+
+.menuContainer p {
+  font-family: Pixel;
+  text-align: center;
+  color: white;
+  text-shadow: black -2px 0px, black 0px 2px, black 2px 0px, black 0px -2px; }
+
+.NavBarGeneral label {
+  font-family: Pixel;
+  text-align: center;
+  color: white;
+  text-shadow: black -2px 0px, black 0px 2px, black 2px 0px, black 0px -2px; }
+
+.catCharMini {
+  position: fixed;
+  left: 150px;
+  opacity: 1;
+  height: 253px;
+  width: 243px; }
+  .catCharMini img {
+    height: 200px;
+    width: 190px; }
+
+.textBox3 {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  left: 400px;
+  width: 400px;
+  height: 150px; }
+  .textBox3 p {
+    font-family: Pixel;
+    text-align: center;
+    color: white;
+    text-shadow: black -2px 0px, black 0px 2px, black 2px 0px, black 0px -2px; }
+
+#textBoxGithub1, #textBoxGithub2, #textBoxGithub3, #textBoxGithub4, #textBoxGithub5, #textBoxGithub6, #textBoxGithub7, #textBoxGithub8 {
+  display: none; }
+
+.githubtrolButton, .githubButton {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  left: 730px;
+  top: 370px;
+  width: 400px;
+  height: 200px;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Pixel;
+  text-align: center;
+  color: white;
+  text-shadow: black -2px 0px, black 0px 2px, black 2px 0px, black 0px -2px; }
+
+.infoImportante {
+  color: yellow; }
+
+.contactoDiv {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  position: absolute;
+  left: 730px;
+  top: 370px;
+  width: 400px;
+  height: 200px;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: Pixel;
+  text-align: center;
+  color: white;
+  text-shadow: black -2px 0px, black 0px 2px, black 2px 0px, black 0px -2px; }
+  .contactoDiv a {
+    cursor: url("./dist/img/cursor/point.png"), pointer;
+    text-decoration: none;
+    color: blueviolet; }
+
+.infoPersonalDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  left: 660px;
+  top: 290px;
+  width: 600px;
+  height: 400px;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  white-space: wrap;
+  overflow-y: auto; }
+  .infoPersonalDiv::-webkit-scrollbar {
+    display: none; }
+  .infoPersonalDiv p {
+    font-family: Pixel;
+    text-align: center;
+    color: white;
+    text-shadow: black -2px 0px, black 0px 2px, black 2px 0px, black 0px -2px; }
+
+.fotoPersonal {
+  display: flex;
+  position: absolute;
+  left: 1262px;
+  top: 157px;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 400px; }
+  .fotoPersonal img {
+    width: 250px;
+    height: 350px; }
+
+.infoPersonalDiv h1 {
+  justify-content: flex-start;
+  font-size: 25px; }
+
+.infoPersonalDiv h4 {
+  justify-content: flex-start;
+  font-size: 16px;
+  color: gold; }
+
+.infoPersonalDiv h3 {
+  justify-content: flex-start;
+  color: cyan; }
+
+@media (max-width: 1280px) {
+  #squareTextWelcome2 {
+    position: absolute;
+    top: 950px;
+    animation: slide 1s forwards; }
+  .catChar {
+    left: auto;
+    top: 100px; }
+  #buttonSeleccion {
+    position: absolute;
+    top: 950px;
+    animation: slide2 1s forwards; } }
+
+@keyframes slide {
+  100% {
+    top: 550px; } }
+
+@keyframes slide2 {
+  100% {
+    top: 650px; } }
+
+@media (max-width: 428px) {
+  .catCharMini {
+    left: 90px; }
+  .textBox3 {
+    left: 15px;
+    top: 360px; }
+  .githubtrolButton, .githubButton {
+    left: 20px;
+    top: 530px;
+    width: 300px;
+    height: 100px; }
+  .menuContainer {
+    top: 180px;
+    z-index: 11; }
+  @keyframes menunav {
+    100% {
+      left: 50px;
+      top: 180px; } } }
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .catCharMini {
+    left: 265px; }
+  .textBox3 {
+    left: 185px;
+    top: 360px; }
+  .githubtrolButton, .githubButton {
+    left: 201px;
+    top: 530px;
+    width: 300px;
+    height: 100px; }
+  .menuContainer {
+    top: 290px;
+    z-index: 11; }
+  @keyframes menunav {
+    100% {
+      left: 230px;
+      top: 290px; } } }
+
+@media (width: 1280px) {
+  .catCharMini {
+    top: 0px; }
+  .githubtrolButton, .githubButton {
+    left: 401px;
+    top: 380px; }
+  .menuContainer {
+    top: 290px;
+    z-index: 11; }
+  @keyframes menunav {
+    100% {
+      left: 490px;
+      top: 290px; } } }
+
+@media (width: 411px) {
+  .catCharMini {
+    left: 90px; }
+  .textBox3 {
+    left: 5px;
+    top: 360px; }
+  .githubtrolButton, .githubButton {
+    left: 20px;
+    top: 530px;
+    width: 300px;
+    height: 100px; }
+  .menuContainer {
+    top: 180px;
+    z-index: 11; }
+  @keyframes menunav {
+    100% {
+      left: 50px;
+      top: 180px; } } }
+
+@media (width: 393px) {
+  .catCharMini {
+    left: 80px; }
+  .textBox3 {
+    width: 360px;
+    left: 16px;
+    top: 360px; }
+  .githubtrolButton, .githubButton {
+    left: 10px;
+    top: 530px;
+    width: 300px;
+    height: 100px; }
+  .menuContainer {
+    top: 180px;
+    z-index: 11; }
+  @keyframes menunav {
+    100% {
+      left: 40px;
+      top: 180px; } } }

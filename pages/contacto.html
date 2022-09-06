@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/rpgui.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="../estilos.css" />
+    <meta name="description" content="Portfolio Personal de Isaac Gonzalez - Contacto">
+    <meta name="keywords" content="Español, JS, HTML, IsaacGonzalez, Developer, Software, Programador, Junior, Porfolio, Experiencia, Contacto, Whatsapp, Telegram, Email, Linkedin, Github">
+    <title>How to contact me</title>
+  </head>
+  <body class="bodyGithub">
+    <audio id="myaudio" autoplay loop>
+      <source src="../audio/backgroundsound.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <nav class="NavBarGeneral">
+        <input class="menuButtonInput" type="checkbox" id="menuButton" name="menuButton">
+        <label class="rpgui-container framed menuButton" for="menuButton">MENÚ</label>
+        <div class="rpgui-container framed menuContainer">
+          <p>PAUSA</p>
+          <br>
+          <div id="navOptions" class="navLinks">
+            <a onclick="return makeSound('../index.html')" href="#" class="rpgui-button beginButton" id="playAudio">Reiniciar Nivel</a>
+            <a onclick="return makeSound('../pages/informacionPersonal.html')" href="#" class="rpgui-button beginButton" id="playAudio">Perfil General</a>
+            <a onclick="return makeSound('../pages/github.html')" href="#" class="rpgui-button beginButton" id="playAudio">Github</a>
+            <a  onclick="return makeSound('../pages/contacto.html')" href="#" class="rpgui-button beginButton githubPageDisable" id="playAudio">Contacto</a>
+          </div>
+          </div>
+        </div>
+        
+    </nav>
+
+    <section class="sectionGithub">
+      
+      <div id="frameCat" class="rpgui-container framed catChar catCharMini">
+        <img src="../images/sasha8bit.jpg" alt="catSasha">
+      </div>
+
+
+      <div id="squareTextGithub" onclick="change_text3()" class="rpgui-container framed textBox3">
+        <audio id="clickSound" src="../audio/selectsound.mp3" preload="auto"></audio>
+        <p id="textBoxGithub0">Click aquí</p>
+        <p id="textBoxGithub1">A Isaac casi no le gusta tener su celular con sonido.</p>
+        <p id="textBoxGithub2">Tampoco es que le escriba alguien...</p>
+        <p id="textBoxGithub3">Ay... ¡No le digas que te dije eso o se molesta!</p>
+        <p id="textBoxGithub4">Bueno, aquí podras encontrar sus modos de contacto.</p>
+        <p id="textBoxGithub5">Si necesitas contactar con el con urgencia, escribele por correo.</p>
+        <p id="textBoxGithub6">Si ya viste todo por acá, presiona en el boton menu para ver otras opciones.</p>
+      </div>
+
+      <div id="contactoDiv" class="rpgui-container framed contactoDiv">
+        <h2><span class="infoImportante">Email:</span> falcohalcon@gmail.com</h2>
+        <h2><span class="infoImportante">Github:</span><a href="https://github.com/halconrandom"> Click Aquí</a></h2>
+        <h2><span class="infoImportante">Linkedin:</span><a href="www.linkedin.com/in/isaac-gonzalez-7b288b24a"> Click Aquí</a></h2>
+        <h2><span class="infoImportante">Whatsapp/Telegram</span> <br>+57 3102534840</h2>
+      </div>
+    </section>
+  </body>
+
+
+  <script src="../dist/rpgui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+  function makeSound(url) {
+    event.preventDefault();
+    
+      var audio = new Audio('../audio/beginsound.mp3');
+      audio.play();
+    
+    setTimeout(function() {
+       window.location.href = url;
+  }, 500);
+  }</script>
+
+  <script src="../main.js"></script>
+</html>

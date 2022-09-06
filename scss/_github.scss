@@ -1,0 +1,99 @@
+.bodyGithub {
+    display: flex;
+  }
+  
+  .githubPageDisable {
+    pointer-events: none;
+    cursor: default;
+  }
+  
+  .NavBarGeneral {
+    display: flex;
+    justify-content: center;
+    z-index: 15;
+  }
+  
+  .menuButton {
+    @include centradoFlex;
+    width: 100px;
+    height: 80px;
+  }
+  
+  .menuButtonInput {
+    display: none;
+  }
+  
+  .menuContainer {
+    @include JSConverter;
+    flex-direction: column;
+    position: absolute;
+    width: 320px;
+    height: 370px;
+    left: -400px;
+    top: 280px;
+  }
+  
+  .menuButtonInput:checked ~ .menuContainer {
+    display: flex;
+    animation: menunav 0.3s ease-in forwards;
+  }
+  
+  @keyframes menunav {
+    100% {
+      left: 800px;
+      top: 280px;
+    }
+  }
+  
+  .menuContainer p {
+    @include textoGeneral;
+  }
+  
+  .NavBarGeneral label {
+    @include textoGeneral;
+  }
+  
+  .catCharMini {
+    position: fixed;
+    left: 150px;
+    opacity: 1;
+    height: 253px;
+    width: 243px;
+  
+    img {
+      height: 200px;
+      width: 190px;
+    }
+  }
+  
+  .textBox3 {
+    position: absolute;
+    @include centradoFlex;
+    left: 400px;
+    width: 400px;
+    height: 150px;
+  
+    p {
+      @include textoGeneral;
+    }
+  }
+  
+  #textBoxGithub1, #textBoxGithub2, #textBoxGithub3, #textBoxGithub4, #textBoxGithub5, #textBoxGithub6, #textBoxGithub7, #textBoxGithub8 {
+    display: none;
+  }
+  
+  .githubtrolButton, .githubButton {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    left: 730px;
+    top: 370px;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    @include textoGeneral;
+  }
+  

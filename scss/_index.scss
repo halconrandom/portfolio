@@ -1,0 +1,35 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    image-rendering: pixelated;
+  }
+  
+  html {
+    cursor: url("./dist/img/cursor/default-blue.png"), default;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/background.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .headerIndex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .beginButton {
+    cursor: url("./dist/img/cursor/point.png"), pointer;
+    text-decoration: none;
+    @include textoGeneral;
+    @include centradoFlex
+
+  }

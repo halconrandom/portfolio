@@ -1,0 +1,26 @@
+.infoImportante {
+    color: yellow;
+  }
+  
+  .contactoDiv {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    position: absolute;
+    left: 730px;
+    top: 370px;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    @include textoGeneral;
+  
+    a {
+      cursor: url("./dist/img/cursor/point.png"), pointer;
+      text-decoration: none;
+      color: blueviolet;
+    }
+  }

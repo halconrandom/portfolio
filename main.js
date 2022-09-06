@@ -86,14 +86,14 @@ function change_text2(){
         } else if (contadorGithub === 6) {
             document.getElementById('textBoxGithub6');
             textBoxGithub5.style.display ="none"
-            githubtrolButton.style.display = "none"
             textBoxGithub6.style.display = "flex"
+            githubtrolButton.style.display = "none"
         } else if (contadorGithub === 7) {
             document.getElementById('textBoxGithub7');
-            textBoxGithub6.style.display ="none"
             document.getElementById('githubButton');
-            githubButton.style.display = "flex"
+            textBoxGithub6.style.display ="none"
             textBoxGithub7.style.display = "flex"
+            githubButton.style.display = "flex"
         } else if (contadorGithub === 8) {
             document.getElementById('textBoxGithub8');
             textBoxGithub7.style.display ="none"
@@ -103,6 +103,88 @@ function change_text2(){
 }
 
 
+var contadorContacto = 0;
+var textBoxGithub = document.getElementById('textBoxGithub0');
+var mql = window.matchMedia("(max-width: 1280px)")
 
+function change_text3(){
+    if (contadorContacto <= 7) {
+        document.getElementById('clickSound').play();
+        contadorContacto = contadorContacto+1;
 
+        if (contadorContacto === 1) {
+            document.getElementById('textBoxGithub1');
+            textBoxGithub0.style.display ="none"
+            textBoxGithub1.style.display = "flex"
 
+        } else if (contadorContacto === 2) {
+            document.getElementById('textBoxGithub2');
+            textBoxGithub1.style.display ="none"
+            textBoxGithub2.style.display = "flex"
+        } else if (contadorContacto === 3) {
+            document.getElementById('textBoxGithub3');
+            textBoxGithub2.style.display ="none"
+            textBoxGithub3.style.display = "flex"
+        } else if (contadorContacto === 4) {
+            document.getElementById('textBoxGithub4');
+            textBoxGithub3.style.display ="none"
+            textBoxGithub4.style.display = "flex"
+        } else if (contadorContacto === 5) {
+            document.getElementById('textBoxGithub5');
+            textBoxGithub4.style.display ="none"
+            textBoxGithub5.style.display = "flex"
+            document.getElementById('contactoDiv');
+            contactoDiv.style.display = "flex"
+        } else if (contadorContacto === 6) {
+            document.getElementById('textBoxGithub5');
+            textBoxGithub5.style.display ="none"
+            textBoxGithub6.style.display = "flex"
+
+        }
+        
+    }   
+}
+
+var contadorInfo = 0;
+var textBoxGithub = document.getElementById('textBoxGithub0');
+var mql = window.matchMedia("(max-width: 1280px)")
+
+function change_text4(){
+    if (contadorInfo <= 9) {
+        document.getElementById('clickSound').play();
+        contadorInfo = contadorInfo+1;
+
+        if (contadorInfo === 1) {
+            document.getElementById('textBoxGithub1');
+            textBoxGithub0.style.display ="none"
+            textBoxGithub1.style.display = "flex"
+
+        } else if (contadorInfo === 2) {
+            document.getElementById('textBoxGithub2');
+            textBoxGithub1.style.display ="none"
+            textBoxGithub2.style.display = "flex"
+        } else if (contadorInfo === 3) {
+            document.getElementById('textBoxGithub3');
+            textBoxGithub2.style.display ="none"
+            textBoxGithub3.style.display = "flex"
+        } else if (contadorInfo === 4) {
+            document.getElementById('textBoxGithub4');
+            textBoxGithub3.style.display ="none"
+            textBoxGithub4.style.display = "flex"
+        } else if (contadorInfo === 5) {
+            document.getElementById('textBoxGithub5');
+            textBoxGithub4.style.display ="none"
+            textBoxGithub5.style.display = "flex"
+        } else if (contadorInfo === 6) {
+            document.getElementById('textBoxGithub6');
+            textBoxGithub5.style.display ="none"
+            textBoxGithub6.style.display = "flex"
+            // document.getElementById('infoPersonalDiv')
+            // infoPersonalDiv.style.display = "flex"
+        } else if (contadorInfo === 7) {
+            document.getElementById('textBoxGithub7');
+            textBoxGithub6.style.display ="none"
+            textBoxGithub7.style.display = "flex"
+        }        
+    }   
+}
