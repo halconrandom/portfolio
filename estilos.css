@@ -182,7 +182,7 @@ body {
   text-shadow: black -2px 0px, black 0px 2px, black 2px 0px, black 0px -2px; }
 
 .catCharMini {
-  position: fixed;
+  position: flex;
   left: 150px;
   opacity: 1;
   height: 253px;
@@ -312,7 +312,13 @@ body {
   #buttonSeleccion {
     position: absolute;
     top: 950px;
-    animation: slide2 1s forwards; } }
+    animation: slide2 1s forwards; }
+  .contactoDiv {
+    left: 450px; }
+  .infoPersonalDiv {
+    left: 350px; }
+  .fotoPersonal {
+    left: 960px; } }
 
 @keyframes slide {
   100% {
@@ -336,6 +342,16 @@ body {
   .menuContainer {
     top: 180px;
     z-index: 11; }
+  .contactoDiv {
+    top: 530px;
+    left: 13px; }
+  .infoPersonalDiv {
+    width: 400px;
+    left: 13px;
+    top: 920px; }
+  .fotoPersonal {
+    top: 515px;
+    left: 65px; }
   @keyframes menunav {
     100% {
       left: 50px;
@@ -355,6 +371,16 @@ body {
   .menuContainer {
     top: 290px;
     z-index: 11; }
+  .contactoDiv {
+    top: 530px;
+    left: 185px; }
+  .infoPersonalDiv {
+    width: 450px;
+    left: 5px;
+    top: 520px; }
+  .fotoPersonal {
+    top: 520px;
+    left: 458px; }
   @keyframes menunav {
     100% {
       left: 230px;
@@ -388,6 +414,16 @@ body {
   .menuContainer {
     top: 180px;
     z-index: 11; }
+  .contactoDiv {
+    top: 515px;
+    left: 5px; }
+  .infoPersonalDiv {
+    width: 400px;
+    left: 5px;
+    top: 920px; }
+  .fotoPersonal {
+    top: 515px;
+    left: 55px; }
   @keyframes menunav {
     100% {
       left: 50px;
@@ -398,7 +434,7 @@ body {
     left: 80px; }
   .textBox3 {
     width: 360px;
-    left: 16px;
+    left: 15px;
     top: 360px; }
   .githubtrolButton, .githubButton {
     left: 10px;
@@ -408,6 +444,17 @@ body {
   .menuContainer {
     top: 180px;
     z-index: 11; }
+  .contactoDiv {
+    width: 360px;
+    top: 515px;
+    left: 15px; }
+  .infoPersonalDiv {
+    width: 370px;
+    left: 3px;
+    top: 920px; }
+  .fotoPersonal {
+    top: 515px;
+    left: 45px; }
   @keyframes menunav {
     100% {
       left: 40px;
