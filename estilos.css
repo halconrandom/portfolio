@@ -162,7 +162,7 @@ body {
 
 .menuButtonInput:checked ~ .menuContainer {
   display: flex;
-  animation: menunav 0.3s ease-in forwards; }
+  animation: menunav 0.5s ease-in forwards; }
 
 @keyframes menunav {
   100% {
@@ -301,161 +301,151 @@ body {
   justify-content: flex-start;
   color: cyan; }
 
-@media (max-width: 1280px) {
-  #squareTextWelcome2 {
+@media (min-width: 768px) and (max-width: 1800px) {
+  .catCharWelcome {
     position: absolute;
-    top: 950px;
-    animation: slide 1s forwards; }
-  .catChar {
-    left: auto;
-    top: 100px; }
+    left: 10px;
+    right: 400px;
+    margin: 0 auto; }
+  .textboxWelcome2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    max-width: 300px;
+    top: 238px;
+    left: 140px;
+    right: -130px;
+    margin: 0 auto; }
   #buttonSeleccion {
     position: absolute;
     top: 950px;
+    left: 140px;
+    right: -130px;
+    margin: 0 auto;
+    width: 280px;
     animation: slide2 1s forwards; }
-  .contactoDiv {
-    left: 450px; }
-  .infoPersonalDiv {
-    left: 350px; }
-  .fotoPersonal {
-    left: 960px; } }
-
-@keyframes slide {
-  100% {
-    top: 550px; } }
-
-@keyframes slide2 {
-  100% {
-    top: 650px; } }
-
-@media (max-width: 428px) {
   .catCharMini {
-    left: 90px; }
+    top: 0px;
+    left: 110px; }
   .textBox3 {
-    left: 15px;
-    top: 360px; }
+    top: 0px;
+    left: 360px;
+    width: 45%;
+    max-width: 500px; }
+  .fotoPersonal {
+    top: 320px;
+    position: absolute;
+    left: 300px;
+    right: -130px;
+    margin: 0 auto; }
+  .infoPersonalDiv {
+    width: 55%;
+    max-width: 450px;
+    top: 320px;
+    position: absolute;
+    left: -400px;
+    right: -80px;
+    margin: 0 auto; }
   .githubtrolButton, .githubButton {
-    left: 20px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
     top: 530px;
     width: 300px;
     height: 100px; }
   .menuContainer {
-    top: 180px;
-    z-index: 11; }
-  .contactoDiv {
-    top: 530px;
-    left: 13px; }
-  .infoPersonalDiv {
-    width: 400px;
-    left: 13px;
-    top: 920px; }
-  .fotoPersonal {
-    top: 515px;
-    left: 65px; }
-  @keyframes menunav {
-    100% {
-      left: 50px;
-      top: 180px; } } }
-
-@media (min-width: 768px) and (max-width: 1279px) {
-  .catCharMini {
-    left: 265px; }
-  .textBox3 {
-    left: 185px;
-    top: 360px; }
-  .githubtrolButton, .githubButton {
-    left: 201px;
-    top: 530px;
-    width: 300px;
-    height: 100px; }
-  .menuContainer {
-    top: 290px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -390px;
     z-index: 11; }
   .contactoDiv {
     top: 530px;
     left: 185px; }
-  .infoPersonalDiv {
-    width: 450px;
-    left: 5px;
-    top: 520px; }
-  .fotoPersonal {
-    top: 520px;
-    left: 458px; }
+  .contactoDiv {
+    top: 320px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto; }
   @keyframes menunav {
     100% {
-      left: 230px;
-      top: 290px; } } }
-
-@media (width: 1280px) {
-  .catCharMini {
-    top: 0px; }
-  .githubtrolButton, .githubButton {
-    left: 401px;
-    top: 380px; }
-  .menuContainer {
-    top: 290px;
-    z-index: 11; }
-  @keyframes menunav {
+      top: 290px; } }
+  @keyframes slide {
     100% {
-      left: 490px;
-      top: 290px; } } }
+      top: 550px; } }
+  @keyframes slide2 {
+    100% {
+      top: 350px; } } }
 
-@media (width: 411px) {
-  .catCharMini {
-    left: 90px; }
+@media (min-width: 350px) and (max-width: 767px) {
+  .catChar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+  .textboxWelcome2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    max-width: 300px;
+    top: 638px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto; }
+  #buttonSeleccion {
+    position: absolute;
+    top: 750px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    width: 280px;
+    animation: slide2 1s forwards; }
   .textBox3 {
-    left: 5px;
-    top: 360px; }
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 280px; }
   .githubtrolButton, .githubButton {
-    left: 20px;
     top: 530px;
     width: 300px;
-    height: 100px; }
+    height: 100px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto; }
+  .menuButton {
+    position: fixed;
+    left: 0px; }
   .menuContainer {
-    top: 180px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -300px;
     z-index: 11; }
   .contactoDiv {
-    top: 515px;
-    left: 5px; }
+    top: 460px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto; }
   .infoPersonalDiv {
-    width: 400px;
-    left: 5px;
+    width: 75%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     top: 920px; }
   .fotoPersonal {
     top: 515px;
-    left: 55px; }
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
   @keyframes menunav {
     100% {
-      left: 50px;
-      top: 180px; } } }
-
-@media (width: 393px) {
-  .catCharMini {
-    left: 80px; }
-  .textBox3 {
-    width: 360px;
-    left: 15px;
-    top: 360px; }
-  .githubtrolButton, .githubButton {
-    left: 10px;
-    top: 530px;
-    width: 300px;
-    height: 100px; }
-  .menuContainer {
-    top: 180px;
-    z-index: 11; }
-  .contactoDiv {
-    width: 360px;
-    top: 515px;
-    left: 15px; }
-  .infoPersonalDiv {
-    width: 370px;
-    left: 3px;
-    top: 920px; }
-  .fotoPersonal {
-    top: 515px;
-    left: 45px; }
-  @keyframes menunav {
-    100% {
-      left: 40px;
       top: 180px; } } }

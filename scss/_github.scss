@@ -35,7 +35,7 @@
   
   .menuButtonInput:checked ~ .menuContainer {
     display: flex;
-    animation: menunav 0.3s ease-in forwards;
+    animation: menunav 0.5s ease-in forwards;
   }
   
   @keyframes menunav {
